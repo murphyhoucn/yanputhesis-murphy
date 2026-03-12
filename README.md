@@ -21,8 +21,8 @@
 
 ### 1. 克隆项目
 ```bash
-git clone https://github.com/murphyhoucn/Yet-Another-LaTeX-Template-for-NPU-Thesis-Murphy.git
-cd Yet-Another-LaTeX-Template-for-NPU-Thesis-Murphy
+git clone git@github.com:murphyhoucn/yanputhesis-murphy.git
+cd yanputhesis-murphy
 git submodule update --init --recursive
 ```
 
@@ -31,16 +31,9 @@ git submodule update --init --recursive
 修改 `main.tex` 中的基本信息：
 
 ```latex
-%% 设置论文类型（博士/硕士、是否盲评）
-\documentclass[lang=chs, degree=master, blindreview=false, adobe=false]{yanputhesis}
-
-%% 填写个人信息
-\title{你的论文标题}{Your Thesis Title in English}
-\author{你的姓名}{Your Name}
-\school{你的学院}{Your School}
-\major{你的专业}{Your Major}
-\advisor{导师姓名}{Advisor Name}
-\studentnumber{你的学号}
+%% 设置论文类型
+% \documentclass[lang=chs, degree=master, blindreview=true, winfonts=true, academic=true]{yanputhesis} % 盲审
+\documentclass[lang=chs, degree=master, blindreview=false, winfonts=true, academic=true]{yanputhesis}  % 非盲审
 ```
 
 ### 3. 版本控制说明
